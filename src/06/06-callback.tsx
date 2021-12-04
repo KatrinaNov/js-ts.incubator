@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 export const User = () => {
 
   const deleteUser = () => {
@@ -15,6 +14,7 @@ export const User = () => {
   const focusLost = () => {
     console.log('focus lost')
   }
+
   return <div>
     <textarea onChange={onNameChanged} onBlur={focusLost}>Katrin</textarea>
     <button onClick={deleteUser}>Delete</button>
